@@ -2,7 +2,7 @@
 //  User.swift
 //  DemoFeb13
 //
-//  Created by Nami Mac on 2/20/21.
+//  Created by Subin Gyawali on 2/20/21.
 //  Copyright © 2021 NAMI. All rights reserved.
 //
 
