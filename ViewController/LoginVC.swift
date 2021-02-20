@@ -25,6 +25,17 @@ class LoginVC: UIViewController {
         let email = self.txtEmail.text
         let pass = self.txtPass.text
         print("\nEmail: \(email!)\nPassword: \(pass!)")
+        
+        let user = User.init(email: email, password: pass)
+        
+        let validation = user.validate(email: user.email ?? "", password: user.password ?? "")
+        
+        if(validation.status){
+            print("Go to Home Screen")
+        }
+        else{
+            print("Validation Failed: \(validation.message)")
+        }
     }
 
     @IBAction func btnRegAction(_ sender: Any) {
