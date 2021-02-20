@@ -16,6 +16,8 @@
 		7904EDEC25D76D6B0037BAE2 /* DemoFeb13UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904EDEB25D76D6B0037BAE2 /* DemoFeb13UITests.swift */; };
 		79CBEBF825E0AA340089E5CC /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBEBF725E0AA340089E5CC /* SignUpVC.swift */; };
 		79CBEBFB25E0B6EC0089E5CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBEBFA25E0B6EC0089E5CC /* Constants.swift */; };
+		79CBEBFE25E0BA970089E5CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBEBFD25E0BA970089E5CC /* User.swift */; };
+		79CBEC0025E0BB460089E5CC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBEBFF25E0BB460089E5CC /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7904EDED25D76D6B0037BAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79CBEBF725E0AA340089E5CC /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		79CBEBFA25E0B6EC0089E5CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		79CBEBFD25E0BA970089E5CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		79CBEBFF25E0BB460089E5CC /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		7904EDBF25D76D6B0037BAE2 = {
 			isa = PBXGroup;
 			children = (
+				79CBEBFC25E0BA240089E5CC /* Model */,
 				79CBEBF925E0B6D00089E5CC /* Util */,
 				791181C625D7708800755C58 /* Storyboard */,
 				791181C525D7705A00755C58 /* ViewController */,
@@ -153,6 +158,15 @@
 				79CBEBFA25E0B6EC0089E5CC /* Constants.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		79CBEBFC25E0BA240089E5CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79CBEBFD25E0BA970089E5CC /* User.swift */,
+				79CBEBFF25E0BB460089E5CC /* Validation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +306,8 @@
 				7904EDCE25D76D6B0037BAE2 /* LoginVC.swift in Sources */,
 				79CBEBF825E0AA340089E5CC /* SignUpVC.swift in Sources */,
 				7904EDCC25D76D6B0037BAE2 /* AppDelegate.swift in Sources */,
+				79CBEBFE25E0BA970089E5CC /* User.swift in Sources */,
+				79CBEC0025E0BB460089E5CC /* Validation.swift in Sources */,
 				79CBEBFB25E0B6EC0089E5CC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
