@@ -77,6 +77,8 @@ class LoginVC: UIViewController {
         
         if(validation.status){
             print("Go to Home Screen")
+            let mainTbVC = UIStoryboard.init(name: StoryboardName.HOME, bundle: nil).instantiateViewController(withIdentifier: StoryboardId.DEMO_TAB_BAR) as! DemoTabbarController
+            self.navigationController?.pushViewController(mainTbVC, animated: true)
         }
         else{
             print("Validation Failed: \(validation.message)")
