@@ -17,11 +17,6 @@ class LoginVC: UIViewController {
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var btnReg: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("viewDidLoad")
-    }
-    
     override class func awakeFromNib() {
         super.awakeFromNib()
         print("awakeFromNib")
@@ -30,6 +25,11 @@ class LoginVC: UIViewController {
     override func loadView() {
         super.loadView()
         print("loadView")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("viewDidLoad")
     }
     
     override func viewDidLayoutSubviews() {

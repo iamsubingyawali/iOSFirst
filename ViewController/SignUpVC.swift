@@ -31,5 +31,8 @@ class SignUpVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func btnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
