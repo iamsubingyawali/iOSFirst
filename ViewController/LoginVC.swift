@@ -19,6 +19,51 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad")
+    }
+    
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        print("awakeFromNib")
+    }
+    
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print("viewDidLayoutSubviews")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("didReceiveMemoryWarning")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 
     @IBAction func btnLogin(_ sender: Any) {
@@ -28,7 +73,7 @@ class LoginVC: UIViewController {
         
         let user = User.init(email: email, password: pass)
         
-        let validation = user.validate(email: user.email ?? "", password: user.password ?? "")
+        let validation = user.validate()
         
         if(validation.status){
             print("Go to Home Screen")
@@ -44,6 +89,8 @@ class LoginVC: UIViewController {
         
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
+    
+    
     
 }
 

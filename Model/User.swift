@@ -22,16 +22,16 @@ class User: NSObject {
         self.password = password
     }
     
-    func validate(email: String, password: String) -> Validation {
+    func validate() -> Validation {
         let validation = Validation.init(status: true, message: "Success")
         
-        if (!Util.validateEmail(enteredEmail: email)){
+        if (!Util.validateEmail(enteredEmail: self.email ?? "")){
             validation.status = false
             validation.message = "Invalid Email"
             return validation
         }
         
-        if (password.count == 0){
+        if (self.password?.count == 0){
             validation.status = false
             validation.message = "Empty Password"
             return validation
