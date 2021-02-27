@@ -30,6 +30,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
+        self.txtEmail.text = "subingyawali@gmail.com"
+        self.txtPass.text = "iamsubingyawali"
     }
     
     override func viewDidLayoutSubviews() {

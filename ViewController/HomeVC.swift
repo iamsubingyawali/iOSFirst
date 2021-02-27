@@ -69,4 +69,7 @@ class HomeVC: UIViewController {
         
     }
 
+    @IBAction func btnLogout(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
